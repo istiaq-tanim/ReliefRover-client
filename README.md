@@ -33,8 +33,8 @@
 
 ## Github Repo (Github):
 
-- For Client(Frontend): https://classroom.github.com/a/ugYcKW_q
-- For Server(Backed): https://classroom.github.com/a/EfrfvbCd
+- For Client(Frontend): https://github.com/istiaq-tanim/ReliefRover-client
+- For Server(Backed): https://github.com/istiaq-tanim/ReliefRover-server
 
 ## Live Link :
 
