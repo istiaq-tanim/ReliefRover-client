@@ -14,7 +14,7 @@ const Modal = ({ supplyId, onClose, isUpdate }: ModalProps) => {
       <div className="relative left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[420px] sm:max-w-[600px] lg:max-w-[984px] p-4 max-h-[90vh] overflow-auto">
         <div className="bg-white shadow-md dark:bg-[#12141D] rounded-2xl  overflow-hidden">
           <BiX
-            onClick={(event) => onClose(event)}
+            onClick={onClose}
             size={32}
             className="text-red-600 absolute top-5 right-10 cursor-pointer"
           />

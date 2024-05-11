@@ -1,11 +1,9 @@
-import { MouseEventHandler } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import {
   useCreateSupplyMutation,
   useUpdateSupplyMutation,
 } from "../../../redux/features/supply/supplyApi";
-import { ISupplyItem } from "../../../types/reliefGood.type";
 
 type Inputs = {
   title: string;
@@ -14,15 +12,7 @@ type Inputs = {
   description: string;
   image: string;
 };
-const CreateSupplyForm = ({
-  supply,
-  isUpdate,
-  onClose,
-}: {
-  supply?: ISupplyItem;
-  isUpdate?: boolean;
-  onClose?: MouseEventHandler<SVGElement>;
-}) => {
+const CreateSupplyForm = ({ supply, isUpdate, onClose }: any) => {
   const { register, handleSubmit, reset } = useForm<Inputs>();
   const [createSupply] = useCreateSupplyMutation();
   const [updateSupply] = useUpdateSupplyMutation();
