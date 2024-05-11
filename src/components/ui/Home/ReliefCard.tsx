@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { ReliefItem } from "../../../types/reliefGood.type";
+import { IReliefItem } from "../../../types/reliefGood.type";
 
-const ReliefCard = ({ item }: { item: ReliefItem }) => {
+const ReliefCard = ({ item }: { item: IReliefItem }) => {
   return (
     <>
       <figure className="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">

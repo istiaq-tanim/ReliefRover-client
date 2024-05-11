@@ -17,7 +17,7 @@ export const supplyApi = baseApi.injectEndpoints({
             }),
             getSingleSupply: build.query({
                   query: (id) => `/get-single-supply/${id}`,
-                  providesTags: (result, error, arg) => [
+                  providesTags: (arg) => [
                         "Supplies",
                         { type: "Supply", id: arg },
                   ]
@@ -28,7 +28,7 @@ export const supplyApi = baseApi.injectEndpoints({
                         method: "PUT",
                         body: item
                   }),
-                  invalidatesTags: (result, error, arg) => [
+                  invalidatesTags: (arg) => [
                         "Supplies",
                         { type: "Supply", id: arg.id },
                   ]

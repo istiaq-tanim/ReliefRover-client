@@ -24,7 +24,7 @@ const SupplyItem = ({ item }: { item: ISupplyItem }) => {
       }).then(async (result) => {
         if (result.isConfirmed) {
           const response = await deleteSupply(id);
-          if (response.success) {
+          if (response) {
             Swal.fire({
               title: "Deleted!",
               text: "Your file has been deleted.",

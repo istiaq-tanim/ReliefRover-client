@@ -19,9 +19,9 @@ const CreateSupplyForm = ({
   isUpdate,
   onClose,
 }: {
-  supply: ISupplyItem;
-  isUpdate: boolean;
-  onClose: MouseEventHandler<SVGElement>;
+  supply?: ISupplyItem;
+  isUpdate?: boolean;
+  onClose?: MouseEventHandler<SVGElement>;
 }) => {
   const { register, handleSubmit, reset } = useForm<Inputs>();
   const [createSupply] = useCreateSupplyMutation();
@@ -37,12 +37,12 @@ const CreateSupplyForm = ({
     };
     if (isUpdate) {
       const response = await updateSupply({ id: supply?._id, item });
-      if (response?.data.success) {
+      if (response) {
         toast.success("Successfully Supply Updated!");
       }
     } else {
       const response = await createSupply(item);
-      if (response?.data.success) {
+      if (response) {
         toast.success("Successfully Supply Created!");
       }
     }

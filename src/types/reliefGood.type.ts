@@ -1,3 +1,4 @@
+
 import { MouseEventHandler } from "react";
 
 export interface IReliefItem {
@@ -21,3 +22,5 @@ export interface ModalProps {
       onClose: MouseEventHandler<SVGElement>;
       isUpdate: boolean;
 }
+
+
