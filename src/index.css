@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  button {
+    @apply py-2 px-2 rounded-md border border-[#5F5F5F]/50 shadow-sm cursor-pointer hover:bg-[#ced6d6] transition-colors active:translate-y-1;
+  }
+  button:disabled {
+    @apply bg-green-600 cursor-default;
+  }
+
+  .login-form {
+    @apply flex flex-col my-6;
+  }
+
+  .login-form div {
+    @apply flex flex-col gap-2 my-2;
+  }
+
+  .login-form input {
+    @apply border border-black/20 rounded-md px-4 py-2 bg-gray-300 text-black;
+  }
+  .link-style {
+    @apply py-2 pl-3 pr-4 text-white bg-green-500 rounded lg:bg-transparent lg:text-green-500 lg:p-0 dark:text-white;
+  }
+}
+
+.swiper {
+  height: 370px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(8, 112, 184, 0.9);
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 4px !important;
+  background-color: rgb(215, 97, 97) !important;
+  border-radius: 0 !important;
+}
+
+.rating {
+  display: inline-block;
+  line-height: 1;
+}
+
+.star {
+  color: #ff6f59;
+  font-size: 1.1rem;
+}
+
+.user {
+  font-weight: 600;
+}
