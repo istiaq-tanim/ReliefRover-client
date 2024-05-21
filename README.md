@@ -1,13 +1,9 @@
-﻿# CleanSweeper
+﻿# ReliefRover
 
 ## Features
 
-- **Intuitive Navigation**: Easy-to-use menu structure and filter functionality based on to help users find products quickly.
-- **Quick View**: Clicking product previews for quick access to product details.
-- **Mobile Compatibility**: Responsive design for seamless browsing on smartphones and tablets.
-- **Detailed Product Descriptions**: Comprehensive information about each product, including usage instructions, ingredients, and safety information.
-- **High-Quality Images**: Clear, high-resolution images of products from multiple angles.
-- **Product Categories**: Organized categories (e.g., Dish Soap, Dish Detergent, Dish Liquid) for easy browsing.
+- **Supply Management**: Maintain a details about relief goods including food, water, medical supplies, blankets, etc.
+- **Real-time Updates**: Receive real-time updates on relief operations, including new donations, distribution schedules, and urgent needs.
 
 ## Technologies Used
 
@@ -15,10 +11,11 @@
 
   - HTML5
   - CSS3
+  - TailWind CSS
   - JavaScript
   - React.js
   - TypeScript
-  - Next.js
+  - Redux
 
 - Backend:
 
@@ -37,9 +34,9 @@
 
 ## Github Repo (Github):
 
-- For Client(Frontend): https://github.com/istiaq-tanim/cleanHub-client
-- For Server(Backed): https://github.com/istiaq-tanim/cleanHub-server
+- For Client(Frontend): https://github.com/istiaq-tanim/ReliefRover-client
+- For Server(Backed): https://github.com/istiaq-tanim/ReliefRover-server
 
 ## Live Link :
 
-- Live Link: https://clean-hub-client.vercel.app/
+- Live Link: https://relief-rover-client.vercel.app/
